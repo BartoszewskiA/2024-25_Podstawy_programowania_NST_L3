@@ -5,6 +5,7 @@
 using namespace std;
 
 string tab[1000];
+
 int main()
 {
     fstream plik;
@@ -20,11 +21,11 @@ int main()
         getline(plik, tab[n]);
         n++;
     }
+    plik.close();
 
     for (int i = 0; i < n; i++)
     {
         cout << i + 1 << ": " << tab[i] << endl;
     }
-    plik.close();
     return 0;
 }
