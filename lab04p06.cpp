@@ -36,6 +36,7 @@ void wczytaj_plik()
         getline(plik, tab[n]);
         n++;
     }
+
     plik.close();
 }
 
